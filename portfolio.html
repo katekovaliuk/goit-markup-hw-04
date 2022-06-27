@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,16 @@
     <!--Custome fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
     <!--Custome style-->
     <link rel="stylesheet" href="./css/styles.css">
-    
+
 </head>
+
 <body>
     <!-- Cекція Хедер-->
     <header class="header">
@@ -24,17 +28,31 @@
             <nav class="header-nav">
                 <ul class="header-nav-list list ">
                     <li class="item"><a class="header-nav-item link " href="./index.html">Студия</a></li>
-                    <li class="item"><a class="header-nav-item link current-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="header-nav-item link current-link" href="./portfolio.html">Портфолио</a>
+                    </li>
                     <li class="item"><a class="header-nav-item link" href="./index.html">Контакты</a></li>
                 </ul>
-            </nav> 
-        
+            </nav>
+
             <ul class="header-contact-list list">
-                <li class="item"><a class="header-contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item"><a class="header-contact-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="item">
+                    <a class="header-contact-item link" href="mailto:info@devstudio.com">
+                        <svg class="contacts-icon" width="16px" height="12px">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="item">
+                    <a class="header-contact-item link" href="tel:+380961111111">
+                        <svg class="contacts-icon" width="10px" height="16px">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
             </ul>
+
         </div>
-    
+
     </header>
 
 
@@ -42,21 +60,21 @@
 
         <section class="portfolio-section">
             <div class="container">
-                <!--Секція Фільтри--> 
-                
-                    <ul class="filters list">
-                        <li class="filter-item"><button class="filter-btn" type="button">Все </button></li>
-                        <li class="filter-item"><button class="filter-btn" type="button">Веб-сайты</button></li>
-                        <li class="filter-item"><button class="filter-btn" type="button">Приложения</button></li>
-                        <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
-                        <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button>  </li>
-                    </ul>
-                        
-                     <!--Секція Портфоліо-->  
+                <!--Секція Фільтри-->
+
+                <ul class="filters list">
+                    <li class="filter-item"><button class="filter-btn" type="button">Все </button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Веб-сайты</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Приложения</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Дизайн</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Маркетинг</button> </li>
+                </ul>
+
+                <!--Секція Портфоліо-->
                 <h1 class="visually-hidden">Портфолио</h1>
                 <ul class="portfolio-flex list">
                     <li class="portfolio-item">
-                        <img src="./images/portfolio/img-1.jpg" alt="Веб-сайт на ноутбуке"  width="370" height="294">
+                        <img src="./images/portfolio/img-1.jpg" alt="Веб-сайт на ноутбуке" width="370" height="294">
                         <div class="portfolio-card">
                             <h2 class="portfolio-item-title">Технокряк</h2>
                             <p class="portfolio-item-descr">Веб-сайт</p>
@@ -70,7 +88,8 @@
                         </div>
                     </li>
                     <li class="portfolio-item">
-                        <img src="./images/portfolio/img-3.jpg" alt="эмблема ресторана Seafood" width="370" height="294">
+                        <img src="./images/portfolio/img-3.jpg" alt="эмблема ресторана Seafood" width="370"
+                            height="294">
                         <div class="portfolio-card">
                             <h2 class="portfolio-item-title">Ресторан Seafood</h2>
                             <p class="portfolio-item-descr">Приложение</p>
@@ -112,7 +131,8 @@
                         </div>
                     </li>
                     <li class="portfolio-item">
-                        <img src="./images/portfolio/img-9.jpg" alt="человек печатает на ноутбуке" width="370" height="294">
+                        <img src="./images/portfolio/img-9.jpg" alt="человек печатает на ноутбуке" width="370"
+                            height="294">
                         <div class="portfolio-card">
                             <h2 class="portfolio-item-title" lang="en">Growing Business</h2>
                             <p class="portfolio-item-descr">Приложение</p>
@@ -120,36 +140,80 @@
                     </li>
                 </ul>
             </div>
-        
-             
 
-       
+
+
+
         </section>
 
-       
-        
+
+
 
     </main>
 
     <footer class="footer">
-        <div class="container">     
-            <a class="logo-footer" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
-            
-            <!--Секція Контакти-->
-            <address>
-                <ul class="footer-list list">
-                    <li class="footer-item"><a class="address-footer link" href= "https://goo.gl/maps/YNEkaUULh8nP7Quw9" target="_blank" rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li> 
-                    <li class="footer-item"><a class="contact-footer link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="footer-item"><a class="contact-footer link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <div class="studio-contacts container">
+            <div class="studio-adresss">
+                <a class="logo-footer" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+
+                <!--Секція Контакти-->
+                <address>
+                    <ul class="footer-list list">
+                        <li class="footer-item">
+                            <a class="address-footer link" href="https://goo.gl/maps/YNEkaUULh8nP7Quw9" target="_blank"
+                                rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="contact-footer link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="contact-footer link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="follow">
+                <strong class="follow-title">присоединяйтесь</strong>
+                <ul class="social-media-footer list">
+                    <li class="social-media-item">
+                        <a class="social-media-link link" href="" target="_blank" rel="noopener noreferrer"
+                            aria-label="instagram">
+                            <svg class="social-media-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a class="social-media-link link" href="" target="_blank" rel="noopener noreferrer"
+                            aria-label="twitter">
+                            <svg class="social-media-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a class="social-media-link link" href="" target="_blank" rel="noopener noreferrer"
+                            aria-label="facebook">
+                            <svg class="social-media-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a class="social-media-link link" href="" target="_blank" rel="noopener noreferrer"
+                            aria-label="linkedin">
+                            <svg class="social-media-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-                
-            </address>
-            
-       </div>
-    
-    
+
+            </div>
+        </div>
+
     </footer>
-    
+
 </body>
 
 
