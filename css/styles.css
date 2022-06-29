@@ -13,6 +13,7 @@
 
 }
 
+
 body {
     font-family: var(--main-font), sans-serif;
     font-weight: 400;
@@ -83,8 +84,6 @@ address {
 .header-container {
     display: flex;
     align-items: center;
-
-    /* background-color: yellowgreen; */
 }
 
 .logo-header {
@@ -97,16 +96,11 @@ address {
     line-height: 1.19;
     color: var(--logo-header-color);
     text-decoration: none;
-
 }
 
 .logo-accent {
     color: var(--accent-text-color);
 }
-
-/* .header-nav-list>li:not(:first-child) {
-    margin-left: 40px; 
-} */
 
 .header-nav-list {
     display: flex;
@@ -114,9 +108,6 @@ address {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-
-    /* background-color: teal; */
 
 }
 
@@ -132,10 +123,12 @@ address {
     color: var(--title-text-color);
 }
 
+
 .header-nav-list :hover,
 .header-nav-list :focus {
     color: var(--accent-text-color);
 }
+
 
 .current-link {
     color: var(--accent-text-color);
@@ -145,22 +138,19 @@ address {
     margin-left: 40px;
 }
 
-/* .header-contact-list>li:not(:first-child) {
-    margin-left: 40px; 
-} */
 
 .header-contact-list {
     display: flex;
     align-items: center;
     margin-left: auto;
-    /* background-color: yellow; */
+   
 }
 
 .contacts-icon {
-    display: block;
     margin-right: 10px;
     fill: currentColor;
 }
+
 
 .header-contact-item {
     display: flex;
@@ -181,14 +171,8 @@ address {
 }
 
 /* Секція Hero */
-/* .overlay{
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;} */
 
 .hero {
-
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -202,17 +186,17 @@ address {
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/img-bgd.jpg);
-
-
     background-color: var(--hero-background-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.hero-title {
 
+.hero-title {
     width: 696px;
     margin-left: auto;
     margin-right: auto;
-
     margin-bottom: 30px;
 
     font-weight: 900;
@@ -221,7 +205,6 @@ address {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
-
 }
 
 .hero-btn {
@@ -261,10 +244,6 @@ address {
     overflow: hidden;
 }
 
-/* .features-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
-  } */
 
 .features-svg {
     display: block;
@@ -273,7 +252,6 @@ address {
     padding: 25px 100px 25px 100px;
     margin-bottom: 30px;
     background-color: var(--team-background-color);
-
 }
 
 .features-list {
@@ -282,12 +260,10 @@ address {
 
 .features-list .item+.item {
     margin-left: 30px;
-
 }
 
 .features-list>.item {
     width: 270px;
-
 }
 
 .features-title {
@@ -326,6 +302,7 @@ address {
 .about-item+.about-item {
     margin-left: 30px;
 }
+
 
 /* Секція Наша команда */
 .team {
@@ -405,15 +382,13 @@ address {
     background-color: var(--secondary-text-color);
     border-radius: 50%;
 
-    /* fill: #AFB1B8;  */
-
-    /* outline: 1px solid red;  */
-}
+   }
 
 .social-media-link:hover,
 .social-media-link:focus {
     color: var(--secondary-text-color);
     background-color: var(--accent-text-color);
+ 
 }
 
 .social-media-icon {
@@ -421,6 +396,7 @@ address {
 }
 
 /* Секція Clients */
+
 
 .cliets-title {
     font-weight: 700;
@@ -432,12 +408,15 @@ address {
     color: var(--title-text-color);
 }
 
+.client-box:not(:last-child) {
+    margin-right: 30px;
+} 
+
 .clients-list {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-
 }
 
 .client-item {
@@ -446,15 +425,11 @@ address {
     justify-content: center;
     width: 170px;
     height: 92px;
+    
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-
     color: #AFB1B8;
-    ;
-}
 
-.client-item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .client-item:hover,
@@ -473,6 +448,7 @@ address {
     padding-bottom: 60px;
     background-color: var(--footer-background-color);
 }
+
 
 .logo-footer {
     display: block;
@@ -517,14 +493,12 @@ address {
 
 .studio-contacts {
     display: flex;
+    align-items: baseline;
 }
 
 /* Секція присоединяйтесь */
 .follow {
-    display: flex;
-    flex-direction: column;
-    margin-top: 12px;
-    margin-left: 70px;
+       margin-left: 70px;
 
 }
 
@@ -544,13 +518,19 @@ address {
     justify-content: center;
 }
 
-.social-media-footer>.social-media-item>.social-media-link {
+.social-media-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     color: var(--secondary-text-color);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-media-footer>.social-media-item>.social-media-link:hover,
-.social-media-footer>.social-media-item>.social-media-link:focus {
+.social-media-link-footer:hover,
+.social-media-link-footer:focus {
     background-color: var(--accent-text-color);
 }
 
@@ -622,8 +602,12 @@ address {
     /* background-color: orange; */
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-card{
+    display: block;
+}
+
+.portfolio-item-card:hover,
+.portfolio-item-card:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     ;
 }
